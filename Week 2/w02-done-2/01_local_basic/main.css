@@ -1,0 +1,51 @@
+/*Mobile First*/
+
+body {
+	background-color: #ba3232;
+	color: #000;
+}
+
+#tmpDisplay::after {
+	content: "mobile view";
+	float: right;
+	padding-right: 10px;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+#content {
+
+}
+
+/*Tablet*/
+
+@media screen and (min-width : 768px) {
+	body {
+		background-color:#ffffff;
+		color: #000;
+	}
+	#tmpDisplay::after {
+		content: "tablet view";
+	}
+	p {
+		font-size: 1em;
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width : 1024px) {
+	body {
+		background-color:#3a3aad;
+		color: #fff;
+	}
+	#tmpDisplay::after {
+		content: "desktop view";
+	}
+	p {
+		font-size: 1em;
+	}
+}

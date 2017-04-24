@@ -1,0 +1,60 @@
+/*Mobile First*/
+
+body {
+
+}
+
+#wrapper {
+
+}
+
+.angler {
+    fill: blue;
+}
+svg {
+    width: 100%;
+    max-width: 100%;
+}
+/*.fish-gills {
+    stroke: purple;
+    stroke-width: 20px;
+    stroke-dasharray: 10px;
+}*/
+
+/*Tablet*/
+
+@media screen and (min-width : 768px) {
+    .fishbowl-1 {
+        width: 50%;
+        float: left;
+    }
+    .fishbowl-2 {
+        float: right;
+        width: 25%;
+        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);
+        transition: transform 500ms ease-in-out;
+    }
+    .fishbowl-2:hover {
+        transform: rotateY(0deg);
+    }
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width : 1024px) {
+    .fishbowl-l {
+        width: 50%;
+    }
+    .fishbowl-2 {
+        width: 25%;
+    }
+
+    .angler {
+        fill: yellow;
+    }
+}
+
+
+

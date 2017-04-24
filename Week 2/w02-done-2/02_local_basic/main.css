@@ -1,0 +1,79 @@
+/*Mobile First*/
+
+body {
+	background-color: #ba3232;
+	color: #000;
+}
+
+#tmpDisplay::after {
+	content: "mobile view";
+}
+
+p {
+	font-size: 1.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#content {
+	margin: 1em auto;
+	width: 300px;
+	height: 480px;
+	background-image: url('img/banana.png');
+}
+
+/*Tablet*/
+
+@media screen and (min-width : 768px) {
+	body {
+		background-color:#ffffff;
+		color: #000;
+	}
+	#tmpDisplay::after {
+		content: "tablet view";
+	}
+	p {
+		font-size: 1em;
+	}
+	#content {
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width : 1024px) {
+	body {
+		background-color:#3a3aad;
+		color: #fff;
+	}
+	#tmpDisplay::after {
+		content: "desktop view";
+	}
+	p {
+		font-size: 1em;
+		text-align: justify;
+	}
+	#wrapper {
+		margin: auto;
+		max-width: 960px;
+	}
+	#content {
+		float: left;
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+	}
+	#extra {
+		float: right;
+		max-width: 640px;
+		padding-top: 1em;
+	}
+}
