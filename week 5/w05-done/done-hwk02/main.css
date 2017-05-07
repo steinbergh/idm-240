@@ -1,0 +1,53 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px;
+}
+
+
+/*Phone landscape*/
+@media screen and (min-width : 480px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 50%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+/*Tablet*/
+@media screen and (min-width : 768px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 33%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+/*Desktop*/
+@media screen and (min-width : 1280px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 25%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+
