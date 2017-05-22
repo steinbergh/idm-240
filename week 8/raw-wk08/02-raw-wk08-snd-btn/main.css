@@ -1,0 +1,13 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px auto;
+	max-width: 512px;
+	text-align: center;
+}

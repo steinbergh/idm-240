@@ -1,0 +1,93 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px;
+}
+
+#saw-svg:hover {
+	cursor: pointer;
+}
+
+#dot {
+	fill: #fff;
+
+	transition-property: fill;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+}
+
+#dot:hover {
+	fill: #aa0c0c;
+	filter: url(#sawBlurred);
+}
+
+#blade {
+	stroke: #000;
+
+	transition-property: stroke;
+	transition-duration: .5s;
+	transition-timing-function: ease-out;
+	transition-delay: .1s;
+}
+
+#blade:hover {
+	fill: #aa0c0c;
+	fill-opacity: .8; /* 0-1 */
+
+	stroke: #d8d80b;
+	stroke-width: .10em;
+	stroke-opacity: .5;  		/* 0-1 */
+	stroke-linejoin: round;	/* miter, round, bevel */
+}
+
+
+/*Phone landscape*/
+
+@media screen and (min-width : 480px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 50%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+/*Tablet*/
+
+@media screen and (min-width : 768px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 33%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+/*Desktop*/
+
+@media screen and (min-width : 1280px) {
+	#saw, #flame, #fish, #bugle  {
+		float: left;
+		width: 25%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+}
+
+
+

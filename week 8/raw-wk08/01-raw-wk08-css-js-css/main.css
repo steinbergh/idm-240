@@ -1,0 +1,26 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+#saw, #flame  {
+    transition: all .5s ease-in-out;
+	width: 50%;
+	float: left;
+}
+
+#flame {
+    transform: scale(1);
+}
+
+#flame:hover {
+    transform: scale(1.5);
+}

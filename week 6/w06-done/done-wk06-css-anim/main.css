@@ -1,0 +1,114 @@
+/*Mobile First*/
+
+body {
+	margin: 0px;
+	background-color: #000;
+	color: #fff;
+}
+
+#wrapper {
+	margin: 0px auto;
+	max-width: 320px;
+}
+
+#drink {
+	text-align: center;
+}
+
+.anim-flag-colors {
+	animation: anim-flag-colors-frames linear 2s;
+  animation-iteration-count: infinite;
+	animation-direction: alternate;
+  -webkit-animation: anim-flag-colors-frames linear 2s;
+  -webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes anim-flag-colors-frames {
+	0% {
+		background-color: red;
+	}
+	50% {
+		background-color: white;
+	}
+	100% {
+		background-color: blue
+	}
+}
+
+@-webkit-keyframes anim-flag-colors-frames {
+	0% {
+		background-color: red;
+	}
+	50% {
+		background-color: white;
+	}
+	100% {
+		background-color: blue
+	}
+}
+
+.anim-swinger{
+  animation: anim-swinger-frames linear 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 0%;
+	animation-direction: alternate;
+  -webkit-animation: anim-swinger-frames linear 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 0%;
+	-webkit-animation-direction: alternate;
+}
+
+@keyframes anim-swinger-frames{
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  20% {
+    transform:  rotate(15deg) ;
+  }
+  40% {
+    transform:  rotate(-10deg) ;
+  }
+  60% {
+    transform:  rotate(5deg) ;
+  }
+  80% {
+    transform:  rotate(-5deg) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes anim-swinger-frames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+  20% {
+    -webkit-transform:  rotate(15deg) ;
+  }
+  40% {
+    -webkit-transform:  rotate(-10deg) ;
+  }
+  60% {
+    -webkit-transform:  rotate(5deg) ;
+  }
+  80% {
+    -webkit-transform:  rotate(-5deg) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}

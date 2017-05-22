@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SVG - CSS - Translations</title>
+	<!-- META -->
+	<meta charset="utf-8">
+	<!-- CSS -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<!-- PAGE CONTENT -->
+	<div id="wrapper">
+		<audio id="audioplayer" src="audio/halo1.mp3">
+			your browser does not support HTML5, maybe get a new one
+		</audio>
+		<div id="bugle">
+			<object data="img/bugle-call.svg" type="image/svg+xml">
+				<img src="img/bugle-call.png" alt="bugle call">
+			</object>
+		</div>
+		<button type="button" onclick="audioToggle('Holla');">Play-Pause</button>
+	</div>
+	<!-- JAVASCRIPT-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
